@@ -10,6 +10,7 @@ function TodoForm() {
         e.preventDefault()
         if(!todo) return
         addTodo({id: Date.now(), todo: todo, check: false})
+        setTodo("")
     }
     return (
         <form onSubmit={add} className="flex">
